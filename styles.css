@@ -1,9 +1,42 @@
+
+a {
+    text-decoration: none;
+}
+a:link {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    color:rgb(37, 37, 37);
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited {
+    color:rgb(37, 37, 37);
+}
+header {
+    height:40px;
+    width: 95vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+header a {
+    padding:0px 10px 0px 0px;
+}
+#user {
+    background-color: red;
+    border-radius:25px;
+    padding:7px;
+    margin:0px 0px 0px 10px;
+}
+
 main {
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width:95vw;
 }
 #logo {
     margin:25px;
@@ -18,19 +51,77 @@ main {
     justify-content: center;
     width:70vw;
     max-width:500px;
-    padding:4px;
-    margin:0px 0px 20px 0px;
+    padding:11px 20px 11px 40px;
+    margin:10px 0px 30px 0px;
+    border-radius:25px;
+    border-width: 1px;
+    border-color:rgb(209, 209, 209);
+    font-size:large;
 }
 .search input:hover {
-    background-color:green;
+    box-shadow:0px 0px 3px grey;
+}
+.search input:focus {
+    box-shadow:0px 0px 3px grey;
+    outline:none;
+}
+#search-symbol {
+    position: absolute;
+    margin: 21px 0px 0px 13px;
+
 }
 #button-row {
     display:flex;
     justify-content: center;
     align-items: center;
 }
+#button-row button{
+    border-radius: 3px;
+    border-width:1px;
+    border-color:white;
+    margin: 4px 4px 24px 4px;
+    font-size:small;
+    font-weight:50;
+    padding: 7px 13px 7px 13px;
+    background-color: rgba(243, 243, 243, 0.795);
+}
+#button-row button:hover{
+    margin: 4px 4px 24px 4px;
+    border-width:1px;
+    border-color:rgb(209, 209, 209);
+    box-shadow: 0px 0px 2px rgb(189, 189, 189);
+}
 h2 {
     font-size:.8em;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:200;
+}
+
+footer {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    width:auto;
+}
+footer #footer-bar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-items: stretch;
+}
+footer a {
+    margin: 10px 5px 10px 5px;
+}
+footer div {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid gray;
+    border-top-width:1px;
+    border-bottom-width:0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
 }
